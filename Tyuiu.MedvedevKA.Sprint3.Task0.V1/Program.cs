@@ -18,7 +18,7 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task0.V1
             //Длина строки 75 символов
             Console.WriteLine("**********************************************************************************************************************");
             Console.WriteLine("* Спринт #3                                                                                                          *");
-            Console.WriteLine("* Тема: Алгоритмы циклической структуры                                                                              *");
+            Console.WriteLine("* Тема: Оператор цикла for                                                                                           *");
             Console.WriteLine("* Задание #0                                                                                                         *");
             Console.WriteLine("* Вариант #1                                                                                                         *");
             Console.WriteLine("* Выполнил: Медведев Кирилл Андриянович | ACOиУБ-23-3                                                                *");
@@ -29,17 +29,19 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task0.V1
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                                   *");
             Console.WriteLine("**********************************************************************************************************************");
 
-            Console.WriteLine("Введите значение x: ");
-            double x = Convert.ToDouble(Console.ReadLine());
+            double value = 4;
+            int startValue = 1;
+            int stopValue = 15;
 
-            double res = ds.GetSumSeries(x);
+            Console.WriteLine("Переменная X = " + value);
+            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Конец шага = " + stopValue);
 
             Console.WriteLine("**********************************************************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                                         *");
             Console.WriteLine("**********************************************************************************************************************");
            
-            Console.WriteLine("Сумма ряда: " + res);
-
+            Console.WriteLine("Сумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
             Console.ReadKey();
         }
     }

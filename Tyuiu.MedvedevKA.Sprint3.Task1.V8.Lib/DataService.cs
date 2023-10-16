@@ -20,7 +20,7 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task1.V8.Lib
                 sum += Math.Pow(1 / Math.Cos(k) + Math.Pow(x, k), k); 
                 k++;
             }
-            return Math.Round(sum, 3);
+            return Math.Truncate(sum);
         }
     }
 }

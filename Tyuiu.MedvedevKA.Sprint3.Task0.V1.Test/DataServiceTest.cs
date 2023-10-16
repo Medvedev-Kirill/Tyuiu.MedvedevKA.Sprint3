@@ -9,11 +9,14 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task0.V1.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidGetSumSeries()
         {
             DataService ds = new DataService();
-            double x = 4;
-            double res = ds.GetSumSeries(x);
+            double value = 4;
+            int startValue = 1;
+            int stopValue = 15;
+
+            double res = ds.GetSumSeries(value, startValue, stopValue);
             double wait = 1935;
 
             Assert.AreEqual(res,wait);

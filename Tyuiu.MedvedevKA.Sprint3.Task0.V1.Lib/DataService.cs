@@ -9,16 +9,15 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task0.V1.Lib
 {
     public class DataService : ISprint3Task0V1
     {
-        public double GetSumSeries(double value)
+        public double GetSumSeries(double value,int startValue,int stopValue)
         {
-            double x = 4;
-            double sum = 0;
-        
-            for (int i =1; i<=15;i++)
+            double sumSeries = 0;
+            int i;
+            for (i = startValue; i <= stopValue;i++)
             {
-               sum += (Math.Pow(x,2) * i) + 1;
+                sumSeries = sumSeries + (Math.Pow(value,2) * i) + 1;
             }
-            return sum;
+            return Math.Round(sumSeries,3);
         }
     }
 }
