@@ -10,17 +10,15 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task1.V8.Lib
 {
     public class DataService : ISprint3Task1V8
     {
-        public double GetMultiplySeries(double value)
+        public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
-            double x = 0.25;
-            double sum = 0;
-            int k = 1;
-            while (k <= 15)
+            double multSeries = 1;
+            while (startValue <= stopValue)
             {
-                sum += Math.Pow(1 / Math.Cos(k) + Math.Pow(x, k), k); 
-                k++;
+                multSeries = multSeries + Math.Pow((1 / Math.Cos(startValue) + Math.Pow(value, startValue)), startValue);
+                startValue++;
             }
-            return Math.Truncate(sum);
+            return Math.Round(multSeries, 3);
         }
     }
 }

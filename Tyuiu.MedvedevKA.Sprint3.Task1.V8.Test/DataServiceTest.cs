@@ -12,9 +12,12 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task1.V8.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double x = 0.25;
-            double res = ds.GetMultiplySeries(x);
-            double wait = 7.833;
+            double value = 0.25;
+            int startValue = 1;
+            int stopValue = 15;
+
+            double res = ds.GetMultiplySeries(value, startValue, stopValue);
+            double wait = 7.837;
           
             Assert.AreEqual(res,wait);
         }

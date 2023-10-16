@@ -18,9 +18,9 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task1.V8
             //Длина строки 75 символов
             Console.WriteLine("**********************************************************************************************************************");
             Console.WriteLine("* Спринт #3                                                                                                          *");
-            Console.WriteLine("* Тема: Алгоритмы циклической структуры                                                                              *");
+            Console.WriteLine("* Тема: Оператор цикла while                                                                                           *");
             Console.WriteLine("* Задание #1                                                                                                         *");
-            Console.WriteLine("* Вариант #8                                                                                                         *");
+            Console.WriteLine("* Вариант #8                                                                                                        *");
             Console.WriteLine("* Выполнил: Медведев Кирилл Андриянович | ACOиУБ-23-3                                                                *");
             Console.WriteLine("**********************************************************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                                                           *");
@@ -29,17 +29,19 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task1.V8
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                                   *");
             Console.WriteLine("**********************************************************************************************************************");
 
-            Console.WriteLine("Введите значение x: ");
-            double x = Convert.ToDouble(Console.ReadLine());
+            double value = 0.25;
+            int startValue = 1;
+            int stopValue = 15;
 
-            double res = ds.GetMultiplySeries(x);
+            Console.WriteLine("Переменная X = " + value);
+            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Конец шага = " + stopValue);
 
             Console.WriteLine("**********************************************************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                                         *");
             Console.WriteLine("**********************************************************************************************************************");
 
-            Console.WriteLine("Сумма ряда: " + res);
-
+            Console.WriteLine("Сумма ряда = " + ds.GetMultiplySeries(value, startValue, stopValue));
             Console.ReadKey();
         }
     }
