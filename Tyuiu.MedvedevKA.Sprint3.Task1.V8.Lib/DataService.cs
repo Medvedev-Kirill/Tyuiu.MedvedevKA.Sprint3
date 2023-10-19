@@ -12,13 +12,13 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task1.V8.Lib
     {
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
-            double sumSeries = 0;
+            double multSeries = 1;
             while (startValue <= stopValue)
             {
-                sumSeries = sumSeries + Math.Pow((1 / Math.Cos(startValue) * Math.Pow(value, startValue)), startValue);
+                multSeries = multSeries * Math.Pow((1 / Math.Cos(startValue) + Math.Pow(value, startValue)), startValue);
                 startValue++;
             }
-            return Math.Round(sumSeries, 3);
+            return Math.Round(multSeries, 3);
         }
     }
 }

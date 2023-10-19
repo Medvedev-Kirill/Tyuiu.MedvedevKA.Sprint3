@@ -31,7 +31,7 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task1.V8
 
             double value = 0.25;
             int startValue = 1;
-            int stopValue = 15;
+            int stopValue = 7;
 
             Console.WriteLine("Переменная X = " + value);
             Console.WriteLine("Старт шага = " + startValue);
