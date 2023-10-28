@@ -10,7 +10,7 @@ namespace Tyuiu.MedvedevKA.Sprint3.Task2.V2.Lib
 {
     public class DataService : ISprint3Task2V2
     {
-        public double GetSumSeries(int startValue, int stopValue)
+        public double GetMultiplySeries(int startValue, int stopValue)
         {
             double multSeries = 1;
             do
